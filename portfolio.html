@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <button class="nav-toggle" aria-label="Toggle menu">☰ Menu</button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">About</a></li>
+                <li class="separator">✿</li>
+                <li><a href="portfolio.html" class="nav-link">Gallery</a></li>
+                <li class="separator">✿</li>
+                <li><a href="https://www.etsy.com/shop/lilstarblankets?ref=shop-header-name&listing_id=1269644453&from_page=listing" class="nav-link">Etsy Shop</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!-- Filter Buttons -->
+    <div class="filters filter-buttons is-flex-direction-column-mobile is-align-items-flex-start">
+        <button class="is-small is-dark mb-2" data-filter="all">All</button>
+        <button class="is-small is-dark mb-2" data-filter="art">Art/Graphics</button>
+        <button class="is-small is-dark mb-2" data-filter="code">Code + Art</button>
+        <button class="is-small is-dark mb-2" data-filter="twitch">Twitch</button>
+    </div>
+    <div>
+        <p style="text-align: center;">Click on a preview for the full view.</p>
+    </div>
+
+    <!-- Gallery -->
+    <div class="image-mosaic">
+        <div class="card card-tall card-wide" data-category="art" data-images="images/frogDesign.png,images/frogDesign1.png" style="background-image: url('images/frogDesign.png')"></div>
+        <div class="card card-tall" data-category="art" data-images="images/lightblue1-1242x2688.png,images/lightblue2-1242x2688.png,images/orange1-1242x2688.png,images/orange2-1242x2688.png,images/pink1-1242x2688.png,images/pink2-1242x2688.png,images/purple1-1242x2688.png,images/purple2-1242x2688.png,images/teal1-1242x2688.png,images/teal2-1242x2688.png" style="background-image: url('images/lightblue1-1242x2688.png')"></div>
+        <div class="card" data-category="art,twitch" data-images="images/waddledee.gif" style="background-image: url('images/waddledee.gif')"></div>
+        <div class="card card-tall card-wide" data-text='<a href="https://github.com/redstarblanket/parallax-art" target="_blank">GitHub Repo</a>, <a href="https://redstarblanket.github.io/parallax-art/"_ target="_blank">Live Demo</a>'
+             data-category="art,code" data-images="images/Hamtaro.png,images/Hamtaro1.mp4,images/Hamtaro2.mp4" style="background-image: url('images/Hamtaro.png')">
+            <div class="info-box"></div>
+        </div>
+        <div class="card" data-category="art" data-images="images/ribenaLamp.png" style="background-image: url('images/ribenaLamp.png')"></div>
+        <div class="card card-wide" data-category="art,twitch" data-images="images/panel.png" style="background-image: url('images/panel.png')"></div>
+        <div class="card" data-category="art" data-images="images/heartNoteDesign.png" style="background-image: url('images/heartNoteDesign.png')"></div>
+        <div class="card card-tall" data-category="art" data-images="images/freeHim.png" style="background-image: url('images/freeHim.png')"></div>
+        <div class="card" data-category="art" data-images="images/asv.png" style="background-image: url('images/asv.png')"></div>
+        <div class="card" data-category="art" data-images="images/Raikou.png" style="background-image: url('images/Raikou.png')"></div>
+        <div class="card card-tall card-wide" data-category="art" data-images="images/kirby-bonk.png" style="background-image: url('images/kirby-bonk.png')"></div>
+        <div class="card" data-category="art" data-images="images/sakuraNoteDesign.png" style="background-image: url('images/sakuraNoteDesign.png')"></div>
+        <div class="card card-wide" data-category="art,twitch" data-images="images/Poster1.png,images/Poster2.png,images/Poster3.png,images/poster4.png" style="background-image: url('images/Poster1.png')"></div>
+        <div class="card" data-category="twitch,art" data-images="images/peepoExcite.gif" style="background-image: url('images/peepoExcite.gif')"></div>
+        <div class="card card-tall card-wide" data-category="art" data-images="images/peepoSnowGlobe.png" style="background-image: url('images/peepoSnowGlobe.png')"></div>
+        <div class="card" data-category="art" data-images="images/profF.png" style="background-image: url('images/profF.png')"></div>
+        <div class="card" data-category="art" data-images="images/peepoPerson.png" style="background-image: url('images/peepoPerson.png')"></div>
+        <div class="card card-tall" data-category="art" data-text="Fantasy mushroom made in Illustrator" data-images="images/morel.png" style="background-image: url('images/morel.png')"></div>
+        <div class="card card-wide" data-category="art,twitch,code" data-text="Custom event list widgets for twitch based on text boxes from Pokemon Platinum. Made with Illustrator, custom CSS, and JSON." data-images="images/pkmnTxtBoxImages.png,images/pkmnTxtBox1.PNG,images/pkmnTxtBox2.PNG,images/pkmnTxtBox3.PNG" style="background-image: url('images/pkmnTxtBoxImages.png')"></div>
+        <div class="card card-tall card-wide" data-category="art" data-images="images/peepoPixel.png" style="background-image: url('images/peepoPixel.png')"></div>
+        <div class="card" data-category="art" data-images="images/peepoMermaid.png" style="background-image: url('images/peepoMermaid.png')"></div>
+        <div class="card" data-category="art" data-text="A tribute to Gym Leader Milo from Pokemon Sword/Shield that parodies the Out of Step album cover from the band Minor Threat" data-images="images/pokemonParody.PNG,images/minorThreat.JPG" style="background-image: url('images/pokemonParody.PNG')"></div>
+        <div class="card" data-category="art" data-images="images/koifish.png" style="background-image: url('images/koifish.png')"></div>
+        <div class="card card-tall" data-category="art" data-images="images/pokemune1.png" style="background-image: url('images/pokemune1.png')"></div>
+        <div class="card card-wide" data-category="art" data-images="images/galaxybanner2.png" style="background-image: url('images/galaxybanner2.png')"></div>
+        <div class="card card-tall card-wide" data-category="art" data-images="images/peepoPixel2.png" style="background-image: url('images/peepoPixel2.png')"></div>
+        <div class="card card-tall" data-text='<a href="https://github.com/redstarblanket/cyberpunk-template" target="_blank">GitHub Repo</a>, <a href="https://redstarblanket.github.io/cyberpunk-template/"_ target="_blank">Live Demo</a>'
+             data-category="art,code" data-images="images/cyberpunk.gif" style="background-image: url('images/cyberpunk.gif')">
+            <div class="info-box"></div>
+        </div>
+        <div class="card card-tall" data-category="art" data-images="images/pokemune2.png" style="background-image: url('images/pokemune2.png')"></div>
+        <div class="card card-wide" data-category="art" data-images="images/nightSky.png" data-text="Lo-fi purple night sky wallpaper. Featured on Pixabay stock image site" style="background-image: url('images/nightSky.png')"></div>
+        <div class="card" data-category="art,twitch" data-images="images/peepoposter1.png,images/peepoposter2.png" style="background-image: url('images/peepoposter1.png')"></div>
+        <div class="card" data-category="art" data-images="images/yume.png" style="background-image: url('images/yume.png')"></div>
+        <div class="card card-wide" data-text='A custom event list widget for Twitch made with CSS and JSON. <a href="https://github.com/redstarblanket/rainbow-gradient-event-list-widget" target="_blank">GitHub Repo.</a>'
+             data-category="art,code,twitch" data-images="images/eventList.GIF" style="background-image: url('images/eventList.GIF')">
+            <div class="info-box"></div>
+        </div>
+        <div class="card card-tall card-wide" data-category="art" data-images="images/peepoKeychain.png" style="background-image: url('images/peepoKeychain.png')"></div>
+        <div class="card" data-category="art" data-images="images/happydog.gif" style="background-image: url('images/happydog.gif')"></div>
+        <div class="card card-wide" data-category="art" data-images="images/coding.png" style="background-image: url('images/coding.png')"></div>
+        <div class="card" data-category="art" data-images="images/puffyhearts.png" style="background-image: url('images/puffyhearts.png')"></div>
+        <div class="card card-tall card-wide" data-category="art" data-images="images/oceanSet.png" style="background-image: url('images/oceanSet.png')"></div>
+        <div class="card card-wide" data-category="art,twitch,code" data-text='A custom chat box, event list, and goals widget set for Twitch made with HTML, CSS, JavaScript, JSON, and designs made with Illustrator. <a href="https://github.com/redstarblanket/purple-night-sky-widgets" target="_blank">GitHub Repo.</a>' data-images="images/widget1.jpg,images/widget2.jpg,images/widget3.jpg,images/widget4.jpg" style="background-image: url('images/widget1.jpg')">
+            <div class="info-box"></div>
+        </div>
+        <div class="card" data-category="art" data-images="images/fruitandveg.jpg" style="background-image: url('images/fruitandveg.jpg')"></div>
+        <div class="card" data-category="art" data-images="images/flower3d.png" style="background-image: url('images/flower3d.png')"></div>
+        <div class="card card-wide" data-category="art" data-images="images/honeycomb2.png" style="background-image: url('images/honeycomb2.png')"></div>
+
+        <div class="card" data-category="art" data-images="images/puffydiamond.jpg" style="background-image: url('images/puffydiamond.jpg')"></div>
+        <div class="card card-tall" data-category="art" data-images="images/bandaids.png" style="background-image: url('images/bandaids.png')"></div>
+        <div class="card" data-category="art" data-images="images/puffyflower.jpg" style="background-image: url('images/puffyflower.jpg')"></div>
+
+        <div class="card card-tall" data-category="art" data-images="images/furin2.png" style="background-image: url('images/furin2.png')"></div>
+
+        <div class="card" data-category="art" data-images="images/puffydiamonds.jpg" style="background-image: url('images/puffydiamonds.jpg')"></div>
+        <div class="card" data-category="art" data-images="images/peepo_magpie.png" style="background-image: url('images/peepo_magpie.png')"></div>
+        <div class="card" data-category="art" data-images="images/kawaiiFrogs.png" style="background-image: url('images/kawaiiFrogs.png')"></div>
+        <div class="card" data-category="art" data-images="images/galaxypattern.jpg" style="background-image: url('images/galaxypattern.jpg')"></div>
+        <div class="card card-tall card-wide" data-category="art" data-images="images/sweets.png" style="background-image: url('images/sweets.png')"></div>
+        <div class="card card-tall" data-category="art" data-images="images/lavaLamp.png" style="background-image: url('images/lavaLamp.png')"></div>
+
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal hidden">
+
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-text" class="modal-text"></div>
+            <img id="slider-img" class="media" style="display: none;" />
+            <video id="slider-video" class="media" controls style="display: none;"></video>
+            <div class="slider-controls">
+                <button id="prev">←</button>
+                <button id="next">→</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>// FILTERING (supports multiple categories)
+        const filterButtons = document.querySelectorAll(".filters button");
+        const cards = document.querySelectorAll(".card");
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener("click", () => {
+                const filter = btn.dataset.filter;
+                cards.forEach(card => {
+                    const categories = card.dataset.category.split(",");
+                    card.style.display =
+                        filter === "all" || categories.includes(filter) ? "block" : "none";
+                });
+            });
+        });
+
+        // MODAL ELEMENTS
+        const modal = document.getElementById("modal");
+        const sliderImg = document.getElementById("slider-img");
+        const sliderVideo = document.getElementById("slider-video");
+        const closeBtn = document.querySelector(".close");
+        const prevBtn = document.getElementById("prev");
+        const nextBtn = document.getElementById("next");
+        const modalText = document.getElementById("modal-text");
+
+        let currentImages = [];
+        let currentIndex = 0;
+
+        function showMedia(src) {
+            const isVideo = src.trim().toLowerCase().endsWith(".mp4");
+
+            if (isVideo) {
+                sliderImg.style.display = "none";
+                sliderVideo.style.display = "block";
+                sliderVideo.src = src;
+                sliderVideo.load();
+                sliderVideo.play();
+            } else {
+                sliderVideo.pause();
+                sliderVideo.style.display = "none";
+                sliderImg.style.display = "block";
+                sliderImg.src = src;
+            }
+
+            prevBtn.style.display = currentImages.length > 1 ? "block" : "none";
+            nextBtn.style.display = currentImages.length > 1 ? "block" : "none";
+        }
+
+        // CARD CLICK HANDLING
+        cards.forEach(card => {
+            card.addEventListener("click", () => {
+                currentImages = card.dataset.images.split(",");
+                currentIndex = 0;
+                showMedia(currentImages[currentIndex]);
+
+                const text = card.dataset.text || "";
+                modalText.innerHTML = text;
+
+                modal.classList.remove("hidden");
+            });
+        });
+
+        closeBtn.onclick = () => {
+            modal.classList.add("hidden");
+            sliderVideo.pause();
+        };
+
+        prevBtn.onclick = () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                showMedia(currentImages[currentIndex]);
+            }
+        };
+
+        nextBtn.onclick = () => {
+            if (currentIndex < currentImages.length - 1) {
+                currentIndex++;
+                showMedia(currentImages[currentIndex]);
+            }
+        };
+
+        window.onclick = e => {
+            if (e.target === modal) {
+                modal.classList.add("hidden");
+                sliderVideo.pause();
+            }
+        };
+
+        // NAV TOGGLE (for mobile menu)
+        const toggleBtn = document.querySelector(".nav-toggle");
+        const navMenu = document.querySelector(".nav-menu");
+
+        toggleBtn.addEventListener("click", () => {
+            navMenu.classList.toggle("show");
+        });
+
+        // NAV LINK HIGHLIGHT
+        const links = document.querySelectorAll(".nav-link");
+        const path = window.location.pathname;
+
+        links.forEach(link => {
+            if (link.getAttribute("href") === path.split("/").pop()) {
+                link.classList.add("active");
+            }
+        });</script>
+
+</body>
+
+</html>

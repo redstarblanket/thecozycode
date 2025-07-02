@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="parallax-overlay"></div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <button class="nav-toggle" aria-label="Toggle menu">☰ Menu</button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">About</a></li>
+                <li class="separator">✿</li>
+                <li><a href="portfolio.html" class="nav-link">Gallery</a></li>
+                <li class="separator">✿</li>
+                <li><a href="https://www.etsy.com/shop/lilstarblankets?ref=shop-header-name&listing_id=1269644453&from_page=listing" class="nav-link">Etsy Shop</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="business-card">
+        <section class="section fullpage-center">
+            <div class="container">
+                <div class="box translucent-card">
+                    <div class="columns is-variable is-6 is-multiline">
+
+
+                        <!-- Left side -->
+                        <div class="column has-text-centered is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
+                            <figure class="image is-128x128 mb-3">
+                                <img class="is-rounded" src="images/500px.png" alt="Business Logo" style="background: linear-gradient(0deg,rgba(237, 66, 183, 1) 0%, rgba(255, 135, 209, 1) 50%, rgba(247, 186, 216, 1) 100%);"/>
+                                <h1></h1>
+                            </figure>
+                            <h1 class="title is-4 has-text-weight-bold has-text-pink">The Cozy Code</h1>
+                            <p class="mb-3" style="background-color: #bb73eb; color: white; padding: 0.75rem; width: 100%;">
+                                Creative designer and developer
+                            </p>
+                        </div>
+
+                        <!-- Right side -->
+                        <div class="column has-text-centered">
+                            <h2 class="subtitle is-5 has-text-weight-bold">Skill Set</h2>
+                            <div class="content" style="background-color: #bb73eb; color: white; padding: 1rem;">
+                                <ul style="list-style-position: inside; text-align:left;">
+                                    <li>
+                                        Front-End Development
+                                        <ul>
+
+                                            <li>HTML5, CSS3, JavaScript</li>
+
+                                            <li>CreateJS, Bootstrap, Bulma</li>
+
+
+                                            <li>Currently learning: Liquid templating language (for Shopify theme customization)</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Back-End & Data
+                                        <ul>
+                                            <li>PHP, SQL, MySQL, JSON</li>
+                                            <li>WordPress, cPanel, Netlify, GitHub Pages</li>
+                                            <li>Microsoft Access</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Version Control
+                                        <ul>
+                                            <li>Git, GitHub, cPanel</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Game & Interactive Media Development
+                                        <ul>
+                                            <li>Unity Engine, C#, Java, ActionScript, CreateJS, JavaScript</li>
+                                            <li>Adobe Animate, Adobe Photoshop, Adobe Illustrator</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Design & Multimedia
+                                        <ul>
+                                            <li>Adobe Illustrator, Adobe Animate, Adobe Photoshop</li>
+
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Optional Social Links -->
+                            <!--  <div class="mt-4">
+            <p class="has-text-weight-bold" style="color: #bb73eb;">Find me on</p>
+            <div class="buttons is-centered is-flex-wrap-wrap is-justify-content-center">
+                <a class="button is-small is-link m-1" href="https://github.com/yourname" target="_blank">GitHub</a>
+                <a class="button is-small is-info m-1" href="https://linkedin.com/in/yourname" target="_blank">LinkedIn</a>
+                <a class="button is-small is-danger m-1" href="https://yourportfolio.com" target="_blank">Portfolio</a>
+            </div>
+        </div>-->
+                        </div>
+
+                    </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script>const toggleBtn = document.querySelector(".nav-toggle");
+            const navMenu = document.querySelector(".nav-menu");
+
+            toggleBtn.addEventListener("click", () => {
+                navMenu.classList.toggle("show");
+            });</script>
+        <script>const links = document.querySelectorAll(".nav-link");
+            const path = window.location.pathname;
+
+            links.forEach(link => {
+                if (link.getAttribute("href") === path.split("/").pop()) {
+                    link.classList.add("active");
+                }
+            });</script>
+
+    </body>
+    </html>
