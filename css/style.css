@@ -1,0 +1,407 @@
+.overlock-regular {
+    font-family: "Overlock", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.overlock-bold {
+    font-family: "Overlock", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.overlock-black {
+    font-family: "Overlock", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.overlock-regular-italic {
+    font-family: "Overlock", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.overlock-bold-italic {
+    font-family: "Overlock", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.overlock-black-italic {
+    font-family: "Overlock", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+html, body {
+    font-family: "Overlock", sans-serif;
+    background: linear-gradient(0deg,rgba(255, 194, 224, 1) 0%, rgba(255, 219, 241, 1) 50%, rgba(252, 232, 242, 1) 100%);
+    margin: 0;
+    padding: 0;
+}
+.image-mosaic {
+    display: grid;
+    gap: .75rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-auto-rows: 240px;
+    grid-auto-flow: dense; /* This helps fill in gaps */
+    margin: .75rem;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    font-size: 3rem;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    transition: all 500ms;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    box-shadow: none;
+}
+    /* Scale and elevate on hover */
+    .card:hover {
+        transform: scale(1.03);
+        box-shadow: 0 0 15px rgba(155, 89, 182, 0.6), 0 0 25px rgba(155, 89, 182, 0.3);
+        z-index: 1;
+    }
+
+    /* Optional: Add a subtle overlay on hover */
+    .card::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0); /* transparent initially */
+        transition: background 0.3s ease;
+        z-index: 1;
+    }
+
+   
+@media screen and (min-width: 600px) {
+    .card-tall {
+        grid-row: span 2 / auto;
+    }
+
+    .card-wide {
+        grid-column: span 2 / auto;
+    }
+}
+
+.filters {
+    text-align: center;
+    margin: 1rem auto;
+}
+    .filters button {
+        margin: 0 0.5rem;
+     margin-top: .5rem;
+        padding: 0.5rem 1rem;
+        background: #bb73eb;
+        color: #f7e0ff;
+        border: none;
+        cursor: pointer;
+        width: 6.5rem;
+        height: 2rem;
+        font-size: .85rem;
+        font-family: "Overlock", sans-serif;
+        font-weight: 700;
+        align-items: center !important;
+        justify-content: center !important;
+        border-radius: 4px;
+    }
+
+        .filters button:hover {
+            background: #a257d4;
+        }
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+    .modal.hidden {
+        display: none;
+    }
+
+.modal-content {
+    background: linear-gradient(0deg,rgba(255, 194, 224, 1) 0%, rgba(255, 219, 241, 1) 50%, rgba(252, 232, 242, 1) 100%);
+    padding: 1rem;
+    position: relative;
+    max-width: 90%;
+    max-height: 80%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+    .modal-content img,
+    .modal-content video {
+        max-width: 100%;
+        max-height: 60vh;
+        display: block;
+        margin: 0 auto;
+        object-fit: contain;
+        border-radius: 0;
+    }
+
+
+.modal-text {
+    color: #5d3f6a;
+    font-family: "Overlock", sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    line-height: 1.4;
+}
+
+
+.close {
+    position: absolute;
+    right: .3rem;
+    top: -.85rem;
+    font-size: 2rem;
+    cursor: pointer;
+     color: #bb73eb;
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+    .slider-controls button {
+        background: #bb73eb;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        margin: 0 0.5rem;
+        cursor: pointer;
+        border-radius: 4px;
+        display: inline-block;
+        white-space: nowrap;
+    }
+.media {
+    max-width: 100%;
+    max-height: 60vh;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    border-radius: 0;
+}
+
+/*navbar*/
+
+.navbar {
+    background-color: #fff2fa;
+    border-bottom: 1px solid #e0c4e7;
+    font-family: "Overlock", sans-serif;
+    padding: 0.5rem 1rem;
+    position: sticky;
+    top: 0 !important;
+    z-index: 3;
+} 
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+ 
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+    .nav-menu .separator {
+        pointer-events: none;
+        color: #bb73eb;
+        font-size: 1.1rem;
+    }
+
+/* Links */
+.nav-link {
+    text-decoration: none;
+    color: #6b4a7c;
+    position: relative;
+    padding: 0.25rem;
+    transition: color 0.3s ease;
+    font-weight: bold;
+    font-size: 1.05rem;
+}
+
+    .nav-link::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0%;
+        height: 2px;
+        background-color: #bb73eb;
+        transition: width 0.3s ease;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+        color: #bb73eb;
+    }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+/* Toggle button for mobile */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #6b4a7c;
+    font-weight: bold;
+    font-family: "Overlock", sans-serif;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin-top: 1rem;
+        display: none;
+    }
+
+        .nav-menu.show {
+            display: flex;
+        }
+
+    .separator {
+        display: none;
+    }
+}
+
+
+
+/*About Page*/
+.fullpage-center {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parallax-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('https://raw.githubusercontent.com/redstarblanket/storage/refs/heads/main/background-overlay1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none;
+    z-index: 0;
+    animation: driftBG 15s linear infinite, fadeBG 6s ease-in-out infinite;
+}
+
+@keyframes driftBG {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 15% 30%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+@keyframes fadeBG {
+    0%, 100% {
+        opacity: 1;
+    }
+    20% {
+        opacity: .6;
+    }
+
+    40% {
+        opacity: .4;
+    }
+    60% {
+        opacity: .2;
+    }
+    80% {
+        opacity: .4;
+    }
+}
+
+.content > ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+    .content > ul > li {
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+
+        .content > ul > li > ul {
+            list-style: disc;
+            padding-left: 1.5rem;
+        }
+
+            .content > ul > li > ul > li {
+                font-weight: normal;
+            }
+.translucent-card {
+    background-color: rgba(252, 252, 252, 0.5);
+}
+
+#modal .modal-text a {
+    color: #8e44ad; /* dark purple */
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+    #modal .modal-text a:hover {
+        color: #bb73eb; /* lighter purple */
+        text-decoration: underline;
+    }
