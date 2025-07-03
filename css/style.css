@@ -333,7 +333,7 @@ html, body {
     background: url('https://raw.githubusercontent.com/redstarblanket/storage/237e8bc2f0971a0b9d8f1a83ec2c9e00e2cba306/background-overlay.svg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     pointer-events: none;
     z-index: 0;
     animation: driftBG 15s linear infinite, fadeBG 6s ease-in-out infinite;
